@@ -19,8 +19,14 @@ class FoodApi {
         return Promise { seal in
             // On fait l'appel dans la promesse
             AF.request("https://api.spoonacular.com/food/search?query=burger&apiKey=748cb7d922484c1585014f1b5ae95677").response { response in
-                let json = JSON(response.data)
+                let json = JSON(response.data as Any)
                 let foodsJSON = json.arrayValue
+                for food in foodsJSON {
+                    foods.append(Food(name: food["name"].stringValue,
+                                      image: food["image"].stringValue,
+                                      content: food["content"].stringValue)
+                    )
+                }
 //                let foodsJSON = json.dictionaryValue["searchResults"]?.array?.first
 //                for food in foodsJSON {
 //                    foods.append(Food(name: food["name"].stringValue,
