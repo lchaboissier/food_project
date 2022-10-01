@@ -18,13 +18,13 @@ class FoodApi {
         // Gestion de l'asynchrone, on retourne une promesse
         return Promise { seal in
             // On fait l'appel dans la promesse
-            AF.request("https://api.spoonacular.com/food/search?query=burger&apiKey=748cb7d922484c1585014f1b5ae95677").response { response in
+            AF.request("https://pizza-and-desserts.p.rapidapi.com/pizzas?rapidapi-key=5ad99fb953msh570c6c6e4fc0156p17034cjsn615241b69dad").response { response in
                 let json = JSON(response.data as Any)
                 let foodsJSON = json.arrayValue
                 for food in foodsJSON {
                     foods.append(Food(name: food["name"].stringValue,
-                                      image: food["image"].stringValue,
-                                      content: food["content"].stringValue)
+                                      image: food["img"].stringValue,
+                                      content: food["description"].stringValue)
                     )
                 }
 //                let foodsJSON = json.dictionaryValue["searchResults"]?.array?.first

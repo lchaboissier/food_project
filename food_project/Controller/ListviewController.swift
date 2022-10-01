@@ -19,9 +19,8 @@ class ListviewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.title = "Liste des burgers*"
+        self.title = "Liste des pizzas"
         refreshFoodList()
-        
         print("coucou")
     }
     
@@ -33,25 +32,6 @@ class ListviewController: UIViewController {
             self.tableView.reloadData()
         }
     }
-    
-    
-
-//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        self.performSegue(withIdentifier: "segueToBeerDescription", sender: beers[indexPath.row])
-//    }
-        
-    //MARK: - Segue
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "segueToBeerDescription" {
-//
-//            let food = sender as? Food
-//
-//            if let viewControllerDestination = segue.destination as? BeerDescriptionViewController {
-//                viewControllerDestination.beer = beer
-//            }
-//
-//        }
-//    }
 }
 
 extension ListviewController: UITableViewDelegate, UITableViewDataSource {
@@ -74,5 +54,19 @@ extension ListviewController: UITableViewDelegate, UITableViewDataSource {
         return 1
     }
     
-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "segueToFoodDescription", sender: foods[indexPath.row])
+    }
+    
+    //MARK: - Segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueToFoodDescription" {
+            
+            let food = sender as? Food
+            
+            if let viewControllerDestination = segue.destination as? DescriptionviewController {
+                viewControllerDestination.food = food
+            }
+        }
+    }
 }

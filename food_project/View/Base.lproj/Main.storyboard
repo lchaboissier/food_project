@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Liste des burgers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kp-SP-LOG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Liste des pizzas" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kp-SP-LOG">
                                 <rect key="frame" x="20" y="100" width="275" height="41"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                                 <nil key="textColor"/>
@@ -65,11 +65,28 @@
                     <tabBarItem key="tabBarItem" title="Rechercher" image="magnifyingglass" catalog="system" id="9jh-wY-tt3"/>
                     <connections>
                         <outlet property="tableView" destination="IkG-ko-ZkN" id="xtE-e1-z8O"/>
+                        <segue destination="pbD-vQ-PEw" kind="show" identifier="segueToFoodDescription" id="4Ny-wg-5vW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hMo-rg-B13" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1626.0869565217392" y="229.6875"/>
+        </scene>
+        <!--Descriptionview Controller-->
+        <scene sceneID="2tm-qU-LNF">
+            <objects>
+                <viewController id="pbD-vQ-PEw" customClass="DescriptionviewController" customModule="food_project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JO4-KC-wyD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dKd-FD-HKb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rq1-Oe-ZdT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CQL-7C-6JW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-370" y="230"/>
         </scene>
         <!--Title-->
         <scene sceneID="vz0-zb-9Dg">

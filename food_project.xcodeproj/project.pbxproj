@@ -20,6 +20,7 @@
 		1F34414C28E6EE09006E32AD /* FoodApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F34414B28E6EE09006E32AD /* FoodApi.swift */; };
 		1F34414E28E6F262006E32AD /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F34414D28E6F262006E32AD /* Food.swift */; };
 		1FB39BF728E714BF00E3AFD1 /* ListviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB39BF628E714BF00E3AFD1 /* ListviewController.swift */; };
+		1FCDAAAE28E819B600758C5F /* DescriptionviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCDAAAD28E819B600758C5F /* DescriptionviewController.swift */; };
 		58A8778F19683DA8F30CCC4B /* Pods_food_project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2711644DCAE3C18DBD01DC7 /* Pods_food_project.framework */; };
 		82CE43E473178216424C3CD9 /* Pods_food_projectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DC5898185640E1607CA845 /* Pods_food_projectTests.framework */; };
 		B0825A8E93776E361F5CB67F /* Pods_food_project_food_projectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AA6CED022FFA4735169ED3 /* Pods_food_project_food_projectUITests.framework */; };
@@ -62,6 +63,7 @@
 		1F34414B28E6EE09006E32AD /* FoodApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodApi.swift; sourceTree = "<group>"; };
 		1F34414D28E6F262006E32AD /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		1FB39BF628E714BF00E3AFD1 /* ListviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListviewController.swift; sourceTree = "<group>"; };
+		1FCDAAAD28E819B600758C5F /* DescriptionviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionviewController.swift; sourceTree = "<group>"; };
 		250EB28A42ADE19BCC8C4493 /* Pods-food_projectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-food_projectTests.debug.xcconfig"; path = "Target Support Files/Pods-food_projectTests/Pods-food_projectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5095FE7A664FDFDE0BD66FCB /* Pods-food_project-food_projectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-food_project-food_projectUITests.debug.xcconfig"; path = "Target Support Files/Pods-food_project-food_projectUITests/Pods-food_project-food_projectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		57AA6CED022FFA4735169ED3 /* Pods_food_project_food_projectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_food_project_food_projectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,6 +178,7 @@
 				1F34411928E6D778006E32AD /* ViewController.swift */,
 				1F34414928E6E7D0006E32AD /* HomeController.swift */,
 				1FB39BF628E714BF00E3AFD1 /* ListviewController.swift */,
+				1FCDAAAD28E819B600758C5F /* DescriptionviewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -455,6 +458,7 @@
 				1FB39BF728E714BF00E3AFD1 /* ListviewController.swift in Sources */,
 				1F34411A28E6D778006E32AD /* ViewController.swift in Sources */,
 				1F34411628E6D778006E32AD /* AppDelegate.swift in Sources */,
+				1FCDAAAE28E819B600758C5F /* DescriptionviewController.swift in Sources */,
 				1F34411828E6D778006E32AD /* SceneDelegate.swift in Sources */,
 				1F34414E28E6F262006E32AD /* Food.swift in Sources */,
 			);
