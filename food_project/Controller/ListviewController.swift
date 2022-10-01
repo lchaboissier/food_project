@@ -13,6 +13,8 @@ class ListviewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
     
+    @IBOutlet var loading: UIActivityIndicatorView!
+    
     //MARK: - Variables
     var foods: [Food] = []
     
