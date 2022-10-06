@@ -8,13 +8,13 @@
 class Food {
     
     let name: String
-    let image: String
+    let imgFood: String
     let content: String
     
     
-    init(name: String, image: String, content: String) {
+    init(name: String, imgFood: String, content: String) {
         self.name = name
-        self.image = image
+        self.imgFood = imgFood
         self.content = content
     }
 }

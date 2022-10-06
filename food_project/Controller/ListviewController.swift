@@ -13,15 +13,13 @@ class ListviewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
     
-    @IBOutlet var loading: UIActivityIndicatorView!
-    
     //MARK: - Variables
     var foods: [Food] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.title = "Liste des pizzas"
+        self.title = "Liste des plats"
         refreshFoodList()
         print("coucou")
     }
@@ -57,7 +55,7 @@ extension ListviewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: "segueToFoodDescription", sender: foods[indexPath.row])
+        performSegue(withIdentifier: "segueToFoodDescription", sender: self)
     }
     
     //MARK: - Segue

@@ -27,7 +27,7 @@ class FoodApi {
                 let foodsJSON = json.dictionaryValue["meals"]!.arrayValue
                 for food in foodsJSON {
                     foods.append(Food(name: food["strMeal"].stringValue,
-                                      image: food["strMealThumb"].stringValue,
+                                      imgFood: food["strMealThumb"].stringValue,
                                       content: food["strInstructions"].stringValue)
                                  )
                     /*let image = json.dictionaryValue["meals"]?.dictionaryValue[food]?["strMealThumb"].stringValue,
@@ -37,6 +37,8 @@ class FoodApi {
                                           content: content)
                                      )*/
                     }
+                // on retourne le resultat de la promesse
+                seal.fulfill(foods)
                 }
 //                let foodsJSON = json.dictionaryValue["searchResults"]?.array?.first
 //                for food in foodsJSON {
@@ -45,8 +47,7 @@ class FoodApi {
 //                                           content: food["content"].stringValue)
 //                    )
 //                }
-                // on retourne le resultat de la promesse
-                seal.fulfill(foods)
+
             }
         }
     }
