@@ -21,6 +21,8 @@
 		1F34414E28E6F262006E32AD /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F34414D28E6F262006E32AD /* Food.swift */; };
 		1FB39BF728E714BF00E3AFD1 /* ListviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB39BF628E714BF00E3AFD1 /* ListviewController.swift */; };
 		1FCDAAAE28E819B600758C5F /* DescriptionviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCDAAAD28E819B600758C5F /* DescriptionviewController.swift */; };
+		1FDC385E28EF286100F891DD /* food-2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1FDC385D28EF286100F891DD /* food-2.jpeg */; };
+		1FDC386028EF2AE400F891DD /* food-3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1FDC385F28EF2AE400F891DD /* food-3.jpeg */; };
 		58A8778F19683DA8F30CCC4B /* Pods_food_project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2711644DCAE3C18DBD01DC7 /* Pods_food_project.framework */; };
 		82CE43E473178216424C3CD9 /* Pods_food_projectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DC5898185640E1607CA845 /* Pods_food_projectTests.framework */; };
 		B0825A8E93776E361F5CB67F /* Pods_food_project_food_projectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AA6CED022FFA4735169ED3 /* Pods_food_project_food_projectUITests.framework */; };
@@ -64,6 +66,9 @@
 		1F34414D28E6F262006E32AD /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		1FB39BF628E714BF00E3AFD1 /* ListviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListviewController.swift; sourceTree = "<group>"; };
 		1FCDAAAD28E819B600758C5F /* DescriptionviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionviewController.swift; sourceTree = "<group>"; };
+		1FDC385C28EF285C00F891DD /* food-1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "food-1.jpeg"; path = "../food-1.jpeg"; sourceTree = "<group>"; };
+		1FDC385D28EF286100F891DD /* food-2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "food-2.jpeg"; path = "../../../Downloads/food-2.jpeg"; sourceTree = "<group>"; };
+		1FDC385F28EF2AE400F891DD /* food-3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "food-3.jpeg"; path = "../../../Downloads/food-3.jpeg"; sourceTree = "<group>"; };
 		250EB28A42ADE19BCC8C4493 /* Pods-food_projectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-food_projectTests.debug.xcconfig"; path = "Target Support Files/Pods-food_projectTests/Pods-food_projectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5095FE7A664FDFDE0BD66FCB /* Pods-food_project-food_projectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-food_project-food_projectUITests.debug.xcconfig"; path = "Target Support Files/Pods-food_project-food_projectUITests/Pods-food_project-food_projectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		57AA6CED022FFA4735169ED3 /* Pods_food_project_food_projectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_food_project_food_projectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +131,9 @@
 		1F34411428E6D778006E32AD /* food_project */ = {
 			isa = PBXGroup;
 			children = (
+				1FDC385F28EF2AE400F891DD /* food-3.jpeg */,
+				1FDC385D28EF286100F891DD /* food-2.jpeg */,
+				1FDC385C28EF285C00F891DD /* food-1.jpeg */,
 				1F34414828E6D836006E32AD /* View */,
 				1F34414728E6D82E006E32AD /* Controller */,
 				1F34414628E6D828006E32AD /* Model */,
@@ -325,6 +333,8 @@
 			files = (
 				1F34412228E6D779006E32AD /* LaunchScreen.storyboard in Resources */,
 				1F34411F28E6D779006E32AD /* Assets.xcassets in Resources */,
+				1FDC386028EF2AE400F891DD /* food-3.jpeg in Resources */,
+				1FDC385E28EF286100F891DD /* food-2.jpeg in Resources */,
 				1F34411D28E6D778006E32AD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

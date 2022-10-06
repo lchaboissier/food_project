@@ -15,6 +15,7 @@ class ListviewController: UIViewController {
     
     //MARK: - Variables
     var foods: [Food] = []
+    static var cellIdentifier = "cell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,9 +40,10 @@ extension ListviewController: UITableViewDelegate, UITableViewDataSource {
 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: ListviewController.cellIdentifier, for: indexPath)
         
         cell.textLabel?.text = "\(foods[indexPath.row].name)"
+        cell.detailTextLabel?.text = "\(foods[indexPath.row].tags)"
         
         return cell
     }
@@ -55,7 +57,8 @@ extension ListviewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "segueToFoodDescription", sender: self)
+        
+        self.performSegue(withIdentifier: "segueToFoodDescription", sender: foods[indexPath.row])
     }
     
     //MARK: - Segue

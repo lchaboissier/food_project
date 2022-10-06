@@ -28,7 +28,28 @@ class FoodApi {
                 for food in foodsJSON {
                     foods.append(Food(name: food["strMeal"].stringValue,
                                       imgFood: food["strMealThumb"].stringValue,
-                                      content: food["strInstructions"].stringValue)
+                                      content: food["strInstructions"].stringValue,
+                                      tags: food["strTags"].stringValue,
+                                      ingredient1: food["strIngredient1"].stringValue,
+                                      ingredient2: food["strIngredient2"].stringValue,
+                                      ingredient3: food["strIngredient3"].stringValue,
+                                      ingredient4: food["strIngredient4"].stringValue,
+                                      ingredient5: food["strIngredient5"].stringValue,
+                                      ingredient6: food["strIngredient6"].stringValue,
+                                      ingredient7: food["strIngredient7"].stringValue,
+                                      ingredient8: food["strIngredient8"].stringValue,
+                                      ingredient9: food["strIngredient9"].stringValue,
+                                      ingredient10: food["strIngredient10"].stringValue,
+                                      ingredient11: food["strIngredient11"].stringValue,
+                                      ingredient12: food["strIngredient12"].stringValue,
+                                      ingredient13: food["strIngredient13"].stringValue,
+                                      ingredient14: food["strIngredient14"].stringValue,
+                                      ingredient15: food["strIngredient15"].stringValue,
+                                      ingredient16: food["strIngredient16"].stringValue,
+                                      ingredient17: food["strIngredient17"].stringValue,
+                                      ingredient18: food["strIngredient18"].stringValue,
+                                      ingredient19: food["strIngredient19"].stringValue,
+                                      ingredient20: food["strIngredient20"].stringValue)
                                  )
                     /*let image = json.dictionaryValue["meals"]?.dictionaryValue[food]?["strMealThumb"].stringValue,
                        let content = json.dictionaryValue["meals"]?.dictionaryValue[food]?["strInstructions"].stringValue {
