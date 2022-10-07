@@ -18,7 +18,9 @@ class HomeController: UIViewController {
     
     @IBOutlet weak var image2WithCorner: UIView!
     @IBOutlet weak var sectionListviewWithCorner: UIView!
+    @IBOutlet weak var listviewButton: UIButton!
     @IBOutlet weak var sectionRandomWithCorner: UIView!
+    @IBOutlet weak var listviewButton2: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,15 +43,27 @@ class HomeController: UIViewController {
         
         self.sectionListviewWithCorner.layer.cornerRadius = 5
         self.sectionListviewWithCorner.layer.masksToBounds = true
+        self.sectionListviewWithCorner.layer.shadowOpacity = 1.0
+        self.sectionListviewWithCorner.layer.shadowOffset = CGSize(width: 5, height: 5)
+        self.sectionListviewWithCorner.layer.shadowRadius = 5
+        self.sectionListviewWithCorner.layer.shadowColor = UIColor.black.cgColor
+        
+        self.listviewButton.layer.borderColor = UIColor.systemGray4.cgColor
         
         self.sectionRandomWithCorner.layer.cornerRadius = 5
         self.sectionRandomWithCorner.layer.masksToBounds = true
         
+        self.listviewButton2.layer.borderColor = UIColor.systemGray4.cgColor
+        
     }
     
     @IBAction func homeButton1(_ sender: Any) {
-        let storyboard = self.storyboard?.instantiateViewController(withIdentifier: "ListviewController") as! ListviewController
-        self.navigationController?.pushViewController(storyboard, animated: true)
+        let toListviewButton = self.storyboard?.instantiateViewController(withIdentifier: "ListviewController") as! ListviewController
+        self.navigationController?.pushViewController(toListviewButton, animated: true)
+    }
+    @IBAction func homeButton2(_ sender: Any) {
+        let toRandomviewButton = self.storyboard?.instantiateViewController(withIdentifier: "RandomFoodController") as! RandomFoodController
+        self.navigationController?.pushViewController(toRandomviewButton, animated: true)
     }
     
 }

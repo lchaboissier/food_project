@@ -8,7 +8,7 @@ target 'food_project' do
   # Pods for food_project
 
   pod "PromiseKit", "~> 6.3.4"
-  pod 'Alamofire', '5.4.0'
+  pod 'Alamofire'
   pod 'SwiftyJSON', '~> 4.0'
 
   target 'food_projectTests' do
