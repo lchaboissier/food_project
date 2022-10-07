@@ -35,9 +35,18 @@ class ListviewController: UIViewController {
     }
 }
 
-extension ListviewController: UITableViewDelegate, UITableViewDataSource {
+extension ListviewController: UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     //MARK: Datasource
 
+    
+    func searchBar()
+    {
+        let searchBar = UISearchBar(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 50))
+        searchBar.delegate = self
+        searchBar.showsScopeBar = true
+        searchBar.tintColor = UIColor.lightGray
+        self.tableView.tableHeaderView = searchBar
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ListviewController.cellIdentifier, for: indexPath)

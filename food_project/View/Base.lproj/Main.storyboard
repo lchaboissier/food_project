@@ -176,8 +176,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="API Food Menu" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAq-Ka-VhA">
-                                <rect key="frame" x="20" y="88" width="237" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Foodeat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAq-Ka-VhA">
+                                <rect key="frame" x="20" y="88" width="130" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                                 <nil key="textColor"/>
@@ -440,6 +440,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="systemOrangeColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="i9H-dn-Qf5" kind="relationship" relationship="viewControllers" id="Voi-VN-e6g"/>
@@ -450,11 +451,11 @@
             </objects>
             <point key="canvasLocation" x="-2342" y="-498"/>
         </scene>
-        <!--Rechercher-->
+        <!--Liste des plats-->
         <scene sceneID="EbC-KS-DVg">
             <objects>
                 <navigationController storyboardIdentifier="UINavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vtV-T2-oUl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Rechercher" image="magnifyingglass" catalog="system" id="9jh-wY-tt3"/>
+                    <tabBarItem key="tabBarItem" title="Liste des plats" image="magnifyingglass" catalog="system" id="9jh-wY-tt3"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="z0F-1Z-Vnq">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -509,6 +510,7 @@
             <point key="canvasLocation" x="-3059" y="996"/>
         </scene>
     </scenes>
+    <color key="tintColor" systemColor="systemOrangeColor"/>
     <resources>
         <image name="chickens.png" width="646" height="434"/>
         <image name="food-2.jpeg" width="1280" height="839"/>
@@ -525,6 +527,9 @@
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

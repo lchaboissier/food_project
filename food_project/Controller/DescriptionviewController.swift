@@ -25,6 +25,7 @@ class DescriptionviewController: UIViewController {
         descImage.layer.masksToBounds = true
         descImage.layer.cornerRadius = 8
         
+        
         if let safeFood = food {
             self.descTitle.text = safeFood.name
             self.descContent.text = safeFood.content
