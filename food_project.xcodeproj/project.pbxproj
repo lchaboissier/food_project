@@ -22,6 +22,7 @@
 		1F8260A628F0026E0045A6F0 /* hamburger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F8260A528F0026E0045A6F0 /* hamburger.jpg */; };
 		1F8260A828F011F10045A6F0 /* loop.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F8260A728F011F10045A6F0 /* loop.png */; };
 		1F8260AA28F01C090045A6F0 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F8260A928F01C090045A6F0 /* logo.png */; };
+		1F8260B228F023A20045A6F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F8260B128F023A20045A6F0 /* LaunchScreen.storyboard */; };
 		1FB39BF728E714BF00E3AFD1 /* ListviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB39BF628E714BF00E3AFD1 /* ListviewController.swift */; };
 		1FCDAAAE28E819B600758C5F /* DescriptionviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCDAAAD28E819B600758C5F /* DescriptionviewController.swift */; };
 		1FDC385E28EF286100F891DD /* food-2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1FDC385D28EF286100F891DD /* food-2.jpeg */; };
@@ -70,6 +71,7 @@
 		1F8260A528F0026E0045A6F0 /* hamburger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hamburger.jpg; path = ../../../Downloads/hamburger.jpg; sourceTree = "<group>"; };
 		1F8260A728F011F10045A6F0 /* loop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loop.png; path = ../../../Downloads/loop.png; sourceTree = "<group>"; };
 		1F8260A928F01C090045A6F0 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ../../../Desktop/logo.png; sourceTree = "<group>"; };
+		1F8260B128F023A20045A6F0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FB39BF628E714BF00E3AFD1 /* ListviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListviewController.swift; sourceTree = "<group>"; };
 		1FCDAAAD28E819B600758C5F /* DescriptionviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionviewController.swift; sourceTree = "<group>"; };
 		1FDC385C28EF285C00F891DD /* food-1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "food-1.jpeg"; path = "../food-1.jpeg"; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				1F34411B28E6D778006E32AD /* Main.storyboard */,
+				1F8260B128F023A20045A6F0 /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				1F8260A828F011F10045A6F0 /* loop.png in Resources */,
 				1F34412228E6D779006E32AD /* LaunchScreen.storyboard in Resources */,
 				1F8260A628F0026E0045A6F0 /* hamburger.jpg in Resources */,
+				1F8260B228F023A20045A6F0 /* LaunchScreen.storyboard in Resources */,
 				1F34411F28E6D779006E32AD /* Assets.xcassets in Resources */,
 				1F8260AA28F01C090045A6F0 /* logo.png in Resources */,
 				1FDC386028EF2AE400F891DD /* food-3.jpeg in Resources */,
