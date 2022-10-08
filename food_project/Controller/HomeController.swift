@@ -25,10 +25,6 @@ class HomeController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let homeView = UIView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
-        homeView.roundCornerView(corners: [.allCorners], radius: 8)
-        self.view.addSubview(homeView)
-        
         self.logoWithCorner.layer.cornerRadius = 5
         self.logoWithCorner.layer.masksToBounds = true
         
@@ -66,13 +62,4 @@ class HomeController: UIViewController {
         self.navigationController?.pushViewController(toRandomviewButton, animated: true)
     }
     
-}
-
-extension UIView{
-    func roundCornerView(corners: UIRectCorner, radius: CGFloat){
-        let path = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: .init(width: radius, height: radius))
-        let mask = CAShapeLayer()
-        mask.path = path.cgPath
-        self.layer.mask = mask
-    }
 }
