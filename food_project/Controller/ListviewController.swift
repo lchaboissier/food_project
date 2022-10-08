@@ -16,6 +16,10 @@ class ListviewController: UIViewController {
     //MARK: - Variables
     var foods: [Food] = []
     static var cellIdentifier = "cell"
+    var wordToFound = "404"
+    var filteredData: [Food]?
+    @IBOutlet weak var searchBar: UISearchBar!
+    var searchWord = ""//ça à ajouter
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,12 +27,13 @@ class ListviewController: UIViewController {
         self.title = "Liste des plats"
         refreshFoodList()
         print("coucou")
+        searchBar.delegate = self
     }
     
     //MARK: - Custom Functions
     func refreshFoodList() {
         self.foods.removeAll()
-        FoodApi.getFoods().done { foodsResponse in
+        FoodApi.getFoods(tag: searchWord).done { foodsResponse in
             self.foods = foodsResponse
             self.tableView.reloadData()
         }
@@ -37,22 +42,31 @@ class ListviewController: UIViewController {
 
 extension ListviewController: UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     //MARK: Datasource
-
     
-    func searchBar()
-    {
-        let searchBar = UISearchBar(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 50))
-        searchBar.delegate = self
-        searchBar.showsScopeBar = true
-        searchBar.tintColor = UIColor.lightGray
-        self.tableView.tableHeaderView = searchBar
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String){
+        if searchText == "" {
+            filteredData = self.foods
+        } else {
+            for food in self.foods {
+                if food.name.lowercased().contains(searchText.lowercased()) {
+                    filteredData?.append(food)
+                }
+                
+            }
+        }
+            searchWord = searchText
+            wordToFound = self.searchWord
+            refreshFoodList()
+            self.tableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: ListviewController.cellIdentifier, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
         cell.textLabel?.text = "\(foods[indexPath.row].name)"
         cell.detailTextLabel?.text = "\(foods[indexPath.row].tags)"
+        
+//        cell.imageView?.image = UIImage(named: "\(foods[indexPath.row].imgFood)")
         
         return cell
     }
