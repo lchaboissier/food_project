@@ -24,11 +24,7 @@ class RandomFoodController: UIViewController {
         // Do any additional setup after loading the view.
         FoodApi.getFoods().done(on: .main, {response in
             self.foods = response
-            self.randomize()
         })
-        
-        self.randomImage.layer.cornerRadius = 5
-        self.randomImage.layer.masksToBounds = true
     }
     
     @IBAction func randomize(_ sender: Any) {
